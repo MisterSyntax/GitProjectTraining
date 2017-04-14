@@ -4,6 +4,12 @@ git add filename
 git add .  
     add all files to staging
 
+git add --alll
+    push everything to staging regardless of adds or deletes
+
+git add filename
+    removes filename and removes filename from staging
+
 git status
     gets status of files
 
@@ -18,10 +24,12 @@ git log
     gives the first line of status
 
 git checkout filename
-    discards all changes made to file and brings back revision from staging
+    -discards all changes made to file and brings back revision from staging
+    -if you delete a file you can use this to bring it back from current staging 
 
 git reset HEAD <file>
     -removes that file from staging
+
 
 
 //Pushing to Remote
@@ -31,3 +39,4 @@ git remote -v
 # Verifies the new remote URL
 git push origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
+
