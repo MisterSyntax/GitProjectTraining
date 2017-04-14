@@ -6,3 +6,28 @@ git add .
 
 git status
     gets status of files
+
+git commit -m "Comment"
+    -m for putting a comment
+    push the files in staging to the server
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+git log 
+    gives the first line of status
+
+git checkout filename
+    discards all changes made to file and brings back revision from staging
+
+git reset HEAD <file>
+    -removes that file from staging
+
+
+//Pushing to Remote
+git remote add origin remote repository URL
+# Sets the new remote
+git remote -v
+# Verifies the new remote URL
+git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
