@@ -1,0 +1,8 @@
+git add filename
+    add something to staging enviornment
+
+git add .  
+    add all files to staging
+
+git status
+    gets status of files
