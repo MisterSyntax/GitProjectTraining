@@ -22,6 +22,8 @@ git config --global user.name "Your Name"
 
 git log 
     gives the first line of status
+    -gives hashes for each commit
+    -can use hashes with checkout to checkout 
 
 git checkout filename
     -discards all changes made to file and brings back revision from staging
@@ -30,7 +32,14 @@ git checkout filename
 git reset HEAD <file>
     -removes that file from staging
 
-
+git branch
+	-lists all the branches
+	
+git branch branchName 
+	-sets you to branchName
+	
+git branch branchName idHashOfBranchFromLog
+	-sets the branch id'd from log to have branchName
 
 //Pushing to Remote
 git remote add origin remote repository URL
