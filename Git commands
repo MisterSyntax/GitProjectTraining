@@ -28,6 +28,16 @@ git log
 git checkout filename
     -discards all changes made to file and brings back revision from staging
     -if you delete a file you can use this to bring it back from current staging 
+	
+git checkout -b newBranchName origin/branchName
+	-grabs the origin branch from github and then check it out and add it to our current project
+	
+//to get all branches
+cd to emptyDirectory
+git clone --mirror repoURL.git .git 
+git conifg --bool core.bare false 
+git reset --hard
+
 
 git reset HEAD <file>
     -removes that file from staging
@@ -56,6 +66,10 @@ git merge fromBranch
 git clone url
 	-makes a local copy of the repository
 	//After this you'll probably need to run npm install to install the dependencies that are listed in the package.json
+	
+	git branch -a	
+	//in a cloned repo, it will show you the other branches available
+	
 	
 //Pushing to Remote
 git remote add origin remote repository URL
