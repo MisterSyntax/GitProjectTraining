@@ -37,6 +37,7 @@ git branch
 	
 git branch branchName 
 	-sets you to branchName
+	-or creates the branchName if you're looking at a fork
 	
 git branch branchName idHashOfBranchFromLog
 	-sets the branch id'd from log to have branchName
@@ -52,6 +53,10 @@ git merge fromBranch
 	-merges the changes from fromBranch into current branch
 	-ALWAYS run git branch first to check what branch you're in
 	
+git clone url
+	-makes a local copy of the repository
+	//After this you'll probably need to run npm install to install the dependencies that are listed in the package.json
+	
 //Pushing to Remote
 git remote add origin remote repository URL
 # Sets the new remote
@@ -60,3 +65,14 @@ git remote -v
 git push origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 
+
+
+
+//GITHUB FILES
+.files are invisible
+
+.gitignore
+//file which tells what to not upload to github
+
+package.json
+node related - keeps tracks of dependencies needed in order to run 
