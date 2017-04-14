@@ -40,7 +40,18 @@ git branch branchName
 	
 git branch branchName idHashOfBranchFromLog
 	-sets the branch id'd from log to have branchName
+	
+git branch -m branchName newBranchName
+	-m = move
+	
+git branch -D branchName
+	-D = delete
+	deletes branchName branch
 
+git merge fromBranch
+	-merges the changes from fromBranch into current branch
+	-ALWAYS run git branch first to check what branch you're in
+	
 //Pushing to Remote
 git remote add origin remote repository URL
 # Sets the new remote
